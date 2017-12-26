@@ -1,5 +1,27 @@
-$color: #262828;
+$color: #0179ab;
 
 body {
   color: $color;
+  height: 100%;
+}
+
+.game-area {
+	display: flex;
+	height: 100%;
+	.total-sticks {
+		flex: 1;
+	}
+	.drawn-sticks {
+		flex: 1;
+	}
+}
+
+.button-draw {
+	height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: #19718e;
+    border: 1px solid #5f90a0;
+    color: white;
 }
