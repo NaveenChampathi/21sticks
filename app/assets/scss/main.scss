@@ -1,0 +1,50 @@
+$color: #ececec;;
+
+body {
+  color: $color;
+  height: 100%;
+  padding: 2rem;
+  background-color: #1b1b1b;
+  font-family: sans-serif;
+}
+
+.game-area {
+	padding-top: 2rem;
+	display: flex;
+	height: 600px;
+	.total-sticks {
+		flex: 1;
+		border-right: 1px dotted black;
+	}
+	.drawn-sticks {
+		padding-left: 16px;
+		flex: 1;
+	}
+}
+
+.button-draw {
+	height: 2rem;
+    width: 7rem;
+    border-radius: 4px;
+    margin: 1rem;
+    background-color: #2351d2;
+    border: 1px solid #2351d2;
+    color: white;
+}
+
+.stick {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	animation-name: example;
+	animation-duration: 1s;
+	  
+	@keyframes example {
+		0%   {bottom: 20px;}
+		100% {bottom: 0px;}
+	}
+}
+
+.sticks-count {
+	text-align: center;
+}
